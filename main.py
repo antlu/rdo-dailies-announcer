@@ -14,7 +14,8 @@ from discord.ext import tasks, commands
 filepath = Path('db.pickle')
 filepath.touch()
 SOURCE_URL = 'https://rdodailies.com/'
-bot = commands.Bot(command_prefix='^')
+CATEGORIES = ('general', 'bounty hunter', 'trader', 'collector', 'moonshiner', 'naturalist')
+bot = commands.Bot(command_prefix=config('COMMAND_PREFIX', '^'))
 
 async def read_db():
     if filepath.stat().st_size == 0:
@@ -37,15 +38,27 @@ def seconds_for_next_update():
     delta = tommorow_6GMT - datetime.utcnow()
     return delta.seconds
 
+def separate_number_from_text(strings_generator):
+    for string in strings_generator:
+        number = string
+        text = next(strings_generator)
+        split_text = text.split(maxsplit=1)
+        if split_text[0].isnumeric():
+            yield (split_text[0], split_text[1])
+        else:
+            yield (number, text)
+
 def parse_data(html):
-    CATEGORIES = ('general', 'bounty', 'trader', 'collector', 'moonshiner', 'naturalist')
     soup = BeautifulSoup(html, 'html.parser')
     parsed_day = str(soup.find('span', class_='daily-challenges-date-selection').string)
     dailies = {}
     for category in CATEGORIES:
-        cat_challenges = soup.find(id='{}-challenges-container'.format(category))
+        cat_challenges = soup.find(id='{}-challenges-container'.format(category.split()[0]))
         strings = cat_challenges.stripped_strings
-        dailies[category] = [{'number': string, 'text': next(strings)} for string in strings]
+        dailies[category] = [
+            {'number': number, 'text': text}
+            for number, text in separate_number_from_text(strings)
+        ]
     return {
         'day': parsed_day,
         'dailies': dailies,
@@ -69,13 +82,12 @@ async def get_data(day):
     return parsed_data
 
 def render_data(data):
-    strings = []
-    for category, tasks in data.items():
+    strings = ['__{}__\n'.format(data['day'])]
+    for category, tasks in data['dailies'].items():
         strings.append('**{} challenges**'.format(category.capitalize()))
         for task in tasks:
             strings.append('{0}: {1}'.format(task['text'], task['number']))
         strings.append('')
-    strings.append('')
     return '\n'.join(strings)
 
 @tasks.loop()
@@ -91,7 +103,7 @@ async def print_dailies():
     if channel.id in day_data['sent_to_channels']:
         return
     await channel.send(
-        '{0}\n\n{1}'.format(day, render_data(day_data['dailies'])),
+        render_data(day_data),
         file=discord.File(BytesIO(day_data['nazar_img']), filename='nazar.png'),
     )
     day_data['sent_to_channels'].append(channel.id)
