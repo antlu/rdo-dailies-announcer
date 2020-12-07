@@ -1,0 +1,1258 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-04 22:26+0500\n"
+"PO-Revision-Date: 2020-12-05 15:23+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "General challenges"
+msgstr "Общие испытания"
+
+msgid "Bounty hunter challenges"
+msgstr "Испытания охотника за головами"
+
+msgid "Trader challenges"
+msgstr "Испытания торговца"
+
+msgid "Collector challenges"
+msgstr "Испытания коллекционера"
+
+msgid "Moonshiner challenges"
+msgstr "Испытания самогонщика"
+
+msgid "Naturalist challenges"
+msgstr "Испытания натуралиста"
+
+msgid "Alaskan Ginseng picked"
+msgstr "Аляскинского женьшеня собрано"
+
+msgid "American Ginseng picked"
+msgstr "Американского женьшеня собрано"
+
+msgid "Animals skinned"
+msgstr "Животных освежевано"
+
+msgid "Animals killed with a Bow"
+msgstr "Животных убито из лука"
+
+msgid "Animals killed"
+msgstr "Животных убито"
+
+msgid "Animals killed with a knife"
+msgstr "Животных зарезано ножом"
+
+msgid "Animals killed with a Throwing Weapon"
+msgstr "Животных убито метательным оружием"
+
+msgid "Nine-banded Armadillos skinned"
+msgstr "Девятипоясных броненосцев освежевано"
+
+msgid "American Badgers skinned"
+msgstr "Американских барсуков освежевано"
+
+msgid "Little Brown Bats collected"
+msgstr "Маленьких бурых ночниц собрано"
+
+msgid "Bay Bolete picked"
+msgstr "Польских грибов собрано"
+
+msgid "Bears killed"
+msgstr "Медведей убито"
+
+msgid "Beavers skinned"
+msgstr "Бобров освежевано"
+
+msgid "Blackberries picked"
+msgstr "Ежевики собрано"
+
+msgid "Blackcurrants picked"
+msgstr "Черной смородины собрано"
+
+msgid "Boars skinned"
+msgstr "Кабанов освежевано"
+
+msgid "Bison skinned"
+msgstr "Бизонов освежевано"
+
+msgid "American Bullfrogs collected"
+msgstr "Американских лягушек-быков собрано"
+
+msgid "Bulls skinned"
+msgstr "Быков освежевано"
+
+msgid "Burdock Roots picked"
+msgstr "Корня лопуха собрано"
+
+msgid "Chanterelle picked"
+msgstr "Лисичек собрано"
+
+msgid "Chickens skinned"
+msgstr "Куриц выпотрошено"
+
+msgid "Western Chipmunks collected"
+msgstr "Малых бурундуков собрано"
+
+msgid "Common Bulrush picked"
+msgstr "Камыша обыкновенного собрано"
+
+msgid "Condors plucked"
+msgstr "Кондоров ощипано"
+
+msgid "Times became drunk"
+msgstr "Опьянений"
+
+msgid "Candies eaten"
+msgstr "Конфет съедено"
+
+msgid "Canned food eaten"
+msgstr "Консервов съедено"
+
+msgid "Cups of coffee drunk"
+msgstr "Кружек кофе выпито"
+
+msgid "Drinks ordered at a Saloon"
+msgstr "Выпивок в салунах заказано"
+
+msgid "Dry goods eaten"
+msgstr "Бакалейных продуктов съедено"
+
+msgid "Fresh produce eaten"
+msgstr "Свежих продуктов съедено"
+
+msgid "Herbs eaten"
+msgstr "Трав съедено"
+
+msgid "Meats eaten"
+msgstr "Мяса съедено"
+
+msgid "Complimentary snacks eaten at a Saloon"
+msgstr "Бесплатных закусок съедено в салуне"
+
+msgid "Tobacco smoked or chewed"
+msgstr "Табака выкурено или сжевано"
+
+msgid "Player stats boosted by tonics"
+msgstr "Характеристик игрока усилено тониками"
+
+msgid "Cormorants plucked"
+msgstr "Бакланов ощипано"
+
+msgid "Cougars killed"
+msgstr "Пум убито"
+
+msgid "Cows skinned"
+msgstr "Коров освежевано"
+
+msgid "Coyotes skinned"
+msgstr "Койотов освежевано"
+
+msgid "Cooked Seasoned Big Game"
+msgstr "Приготовлена крупная дичь с приправой"
+
+msgid "Small animal carcasses broken down"
+msgstr "Тушек мелких животных ободрано"
+
+msgid "Cooked Seasoned Crustacean"
+msgstr "Приготовлено мясо ракообразных с приправой"
+
+msgid "Cooked Seasoned Exotic Bird"
+msgstr "Приготовлено мясо экзотической птицы с приправой"
+
+msgid "Cooked Seasoned Flaky Fish"
+msgstr "Приготовлена рассыпчатая рыба с приправой"
+
+msgid "Provisions cooked at campfire"
+msgstr "Блюд приготовлено на лагерном костре"
+
+msgid "Cooked Seasoned Game"
+msgstr "Приготовлена дичь с приправой"
+
+msgid "Crafted a horse care item"
+msgstr "Предметов для ухода за лошадью изготовлено"
+
+msgid "Cooked Seasoned Mutton"
+msgstr "Приготовлена баранина с приправой"
+
+msgid "Cooked Seasoned Plump Bird"
+msgstr "Приготовлено мясо упитанной птицы с приправой"
+
+msgid "Cooked Seasoned Pork"
+msgstr "Приготовлена свинина с приправой"
+
+msgid "Cooked Seasoned Prime Beef"
+msgstr "Приготовлена первосортная говядина с приправой"
+
+msgid "Cooked Seasoned Succulent Fish"
+msgstr "Приготовлена сочная рыба с приправой"
+
+msgid "Crafted a Tonic"
+msgstr "Изготовлен тоник"
+
+msgid "Cooked Seasoned Venison"
+msgstr "Приготовлена оленина с приправой"
+
+msgid "Whooping Cranes plucked"
+msgstr "Американских журавлей ощипано"
+
+msgid "Creeping Thyme picked"
+msgstr "Тимьяна ползучего собрано"
+
+msgid "Belt Buckle updated"
+msgstr "Пряжек для пояса изменено"
+
+msgid "Camp themes updated"
+msgstr "Тем лагеря изменено"
+
+msgid "Clothing style updated"
+msgstr "Стиль одежды изменен"
+
+msgid "Facial appearance updated at a Barber"
+msgstr "Внешность изменена у цирюльника"
+
+msgid "Hairstyle updated"
+msgstr "Прическа изменена"
+
+msgid "Horse tack updated"
+msgstr "Сбруя лошади изменена"
+
+msgid "Put a mask on your horse"
+msgstr "Вы надели маску на свою лошадь"
+
+msgid "Horse appearance updated"
+msgstr "Внешний вид лошади изменен"
+
+msgid "Masks worn"
+msgstr "Масок надето"
+
+msgid "Weapons cleaned with Gun Oil"
+msgstr "Оружия почищено оружейным маслом"
+
+msgid "Weapons customized"
+msgstr "Оружия модифицировано"
+
+msgid "Deer skinned"
+msgstr "Оленей освежевано"
+
+msgid "Desert Sage picked"
+msgstr "Пустынного шалфея собрано"
+
+msgid "Distance traveled"
+msgstr "Преодоленное расстояние (в футах)"
+
+msgid "Distance traveled by coach or wagon"
+msgstr "Расстояние, преодоленное на дилижансе или повозке (в футах)"
+
+msgid "Distance traveled in boat with a Posse Member"
+msgstr "Расстояние, преодоленное в лодке с членом отряда (в футах)"
+
+msgid "Distance traveled on a mount with a Posse Member"
+msgstr "Расстояние, преодоленное в седле с членом отряда (в футах)"
+
+msgid "Distance traveled by wagon with a Posse Member"
+msgstr "Расстояние, преодоленное на дилижансе или повозке с членом отряда (в футах)"
+
+msgid "Distance driven a train"
+msgstr "Расстояние, преодоленное на угнанном поезде (в футах)"
+
+msgid "Distance traveled leading own horse"
+msgstr "Расстояние, которое вы вели лошадь"
+
+msgid "Distance traveled on mount"
+msgstr "Расстояние, преодоленное в седле (в футах)"
+
+msgid "Distance rowed a boat or canoe"
+msgstr "Расстояние, преодоленное на лодке или каноэ (в футах)"
+
+msgid "Distance ran"
+msgstr "Расстояние, преодоленное бегом (в футах)"
+
+msgid "Distance swam"
+msgstr "Расстояние, преодоленное вплавь (в футах)"
+
+msgid "Distance traveled by train"
+msgstr "Расстояние, преодоленное на поезде (в футах)"
+
+msgid "Petted a dog"
+msgstr "Собак поглажено"
+
+msgid "Ducks skinned"
+msgstr "Уток выпотрошено"
+
+msgid "Successfully fended off an ambush"
+msgstr "Отражено нападение из засады"
+
+msgid "Defended a campsite"
+msgstr "Отражено нападение на лагерь"
+
+msgid "Treasure Maps or treasures found"
+msgstr "Сокровищ или карт сокровищ найдено"
+
+msgid "Followed dog to something interesting"
+msgstr "Собака привела вас к интересной находке"
+
+msgid "Helped someone in need"
+msgstr "Оказано помощи нуждающимся"
+
+msgid "Stopped a runaway wagon"
+msgstr "Неуправляемых повозок остановлено"
+
+msgid "Eagles plucked"
+msgstr "Орлов ощипано"
+
+msgid "Egrets skinned"
+msgstr "Белых цапель выпотрошено"
+
+msgid "Elk skinned"
+msgstr "Вапити освежевано"
+
+msgid "Used an emote on a local"
+msgstr "Жестов показано местному жителю"
+
+msgid "Used an emote on a player in Free Roam"
+msgstr "Жестов показано игроку в свободном режиме"
+
+msgid "Non-player enemies grappled to the ground"
+msgstr "ИИ-врагов схвачено и повалено на землю"
+
+msgid "Non-player enemies killed from cover"
+msgstr "ИИ-врагов убито из укрытия"
+
+msgid "Non-player enemies killed while in Dead Eye"
+msgstr "ИИ-врагов убито в режиме «Меткий глаз»"
+
+msgid "Non-player enemies killed from the hip"
+msgstr "ИИ-врагов убито выстрелами от бедра"
+
+msgid "Non-player enemies killed at long range"
+msgstr "ИИ-врагов убито с большого расстояния"
+
+msgid "Non-player enemies killed with a Maxim Gun"
+msgstr "ИИ-врагов убито из пулемета Максима"
+
+msgid "Non-player enemies killed while not seen"
+msgstr "ИИ-врагов убито скрытно"
+
+msgid "Non-player enemies knocked out"
+msgstr "ИИ-врагов оглушено"
+
+msgid "Non-player enemies looted"
+msgstr "ИИ-врагов ограблено"
+
+msgid "Non-player enemy hats shot off"
+msgstr "Шляп ИИ-врагов сбито"
+
+msgid "English Mace picked"
+msgstr "Тысячелистника агератумного собрано"
+
+msgid "Evergreen Huckleberries picked"
+msgstr "Черники овальнолистной собрано"
+
+msgid "Fish caught"
+msgstr "Рыб поймано"
+
+msgid "Bluegill caught"
+msgstr "Синежаберников поймано"
+
+msgid "Bullhead Catfish caught"
+msgstr "Американских сомов поймано"
+
+msgid "Chain Pickerel caught"
+msgstr "Полосатых щук поймано"
+
+msgid "Channel Catfish caught"
+msgstr "Канальный сом пойман"
+
+msgid "Fish caught with food"
+msgstr "Рыб поймано на приманку из пищи"
+
+msgid "Lake Sturgeon caught"
+msgstr "Озерный осетр пойман"
+
+msgid "Largemouth Bass caught"
+msgstr "Большеротых окуней поймано"
+
+msgid "Fish caught with live bait"
+msgstr "Рыб поймано на живую наживку"
+
+msgid "Longnose Gar caught"
+msgstr "Длиннорылый панцирник пойман"
+
+msgid "Fish caught with a lure"
+msgstr "Рыб поймано на приманку"
+
+msgid "Muskie caught"
+msgstr "Щука-маскинонг поймана"
+
+msgid "Perch caught"
+msgstr "Желтых окуней поймано"
+
+msgid "Redfin Pickerel caught"
+msgstr "Красноперых щук поймано"
+
+msgid "Rock Bass caught"
+msgstr "Каменных окуней поймано"
+
+msgid "Smallmouth Bass caught"
+msgstr "Малоротых окуней поймано"
+
+msgid "Sockeye Salmon caught"
+msgstr "Лососей поймано"
+
+msgid "Steelhead Trout caught"
+msgstr "Радужных форелей поймано"
+
+msgid "Types of fish caught"
+msgstr "Разновидностей рыб поймано"
+
+msgid "Northern Pike caught"
+msgstr "Щук поймано"
+
+msgid "Fish caught weighing at least 5 lbs (2.2 kg)"
+msgstr "Поймано рыб весом более 5 фунтов (2.2 килограмма)"
+
+msgid "Flying birds killed"
+msgstr "Летящих птиц убито"
+
+msgid "Flying birds killed with a sniper rifle"
+msgstr "Летящих птиц убито из снайперской винтовки"
+
+msgid "Flying birds killed while on a moving train"
+msgstr "Летящих птиц убито с движущегося поезда"
+
+msgid "Free Roam Events played"
+msgstr "Участие в событиях свободного режима принято"
+
+msgid "Placed top 3 with a score in Free Roam Events"
+msgstr "1, 2 или 3 место в событии свободного режима занято c очками"
+
+msgid "Foxes skinned"
+msgstr "Лис освежевано"
+
+msgid "Alligators killed"
+msgstr "Аллигаторов убито"
+
+msgid "Anthony Foreman missions completed"
+msgstr "Заданий Энтони Формана выполнено"
+
+msgid "Hamish Sinclair missions completed"
+msgstr "Заданий Хэмиша Синклера выполнено"
+
+msgid "James Langton missions completed"
+msgstr "Заданий Джеймса Лэнгтона выполнено"
+
+msgid "Sean Macguire missions completed"
+msgstr "Заданий Шона Макгуайра выполнено"
+
+msgid "Shaky missions completed"
+msgstr "Заданий Шейки выполнено"
+
+msgid "The Boy missions completed"
+msgstr "Заданий Малого выполнено"
+
+msgid "Free Roam missions completed"
+msgstr "Заданий свободного режима завершено"
+
+msgid "Banded Gila Monsters skinned"
+msgstr "Полосатых ядозубов освежевано"
+
+msgid "Alpine Goats skinned"
+msgstr "Альпийских коз освежевано"
+
+msgid "Golden Currants picked"
+msgstr "Смородины золотистой собрано"
+
+msgid "Geese skinned"
+msgstr "Гусей выпотрошено"
+
+msgid "Hawks plucked"
+msgstr "Ястребов ощипано"
+
+msgid "Herons skinned"
+msgstr "Цапель выпотрошено"
+
+msgid "Hideouts cleared"
+msgstr "Логов зачищено"
+
+msgid "Animals trampled"
+msgstr "Животных растоптано"
+
+msgid "Non-player enemies trampled"
+msgstr "ИИ-врагов растоптано"
+
+msgid "Horses fed"
+msgstr "Лошадей накормлено"
+
+msgid "Jumped onto a horse from a 3m height"
+msgstr "Совершен прыжок на лошадь с высоты 3 м"
+
+msgid "Jumped from a horse to another horse"
+msgstr "Прыжков с лошади на другую лошадь выполнено"
+
+msgid "Jumped from a horse onto a moving train"
+msgstr "Прыжков с лошади на движущийся поезд выполнено"
+
+msgid "Jumped from a horse to a moving wagon"
+msgstr "Прыжков с лошади на движущуюся повозку выполнено"
+
+msgid "Animals stowed on horseback"
+msgstr "Животных погружено на лошадь"
+
+msgid "Horse tonics used"
+msgstr "Использовано тоников для лошади"
+
+msgid "Vaults on horseback"
+msgstr "Прыжков верхом через препятствие выполнено"
+
+msgid "Hummingbird Sage picked"
+msgstr "Шалфея покрывальцевого собрано"
+
+msgid "Iguanas skinned"
+msgstr "Игуан освежевано"
+
+msgid "Indian Tobacco picked"
+msgstr "Индейского табака собрано"
+
+msgid "Collared Peccaries skinned"
+msgstr "Ошейниковых пекари освежевано"
+
+msgid "Non-player enemies lassoed from horseback"
+msgstr "ИИ-врагов заарканено с лошади"
+
+msgid "Distance enemy dragged from horseback"
+msgstr "Расстояние, с которого ИИ-врага заарканили и протащили, не слезая с лошади (в футах)"
+
+msgid "Escaped the law"
+msgstr "Совершен побег от законников"
+
+msgid "Loons skinned"
+msgstr "Гагар выпотрошено"
+
+msgid "Milkweed picked"
+msgstr "Молочая собрано"
+
+msgid "Moose skinned"
+msgstr "Лосей освежевано"
+
+msgid "American Muskrats skinned"
+msgstr "Америкаских ондатр освежевано"
+
+msgid "Don't reach high Hostility within one game day"
+msgstr "Дней в игре без достижения высокого уровня враждебности"
+
+msgid "Oleander Sage picked"
+msgstr "Олеандра собрано"
+
+msgid "Virginia Opossums skinned"
+msgstr "Виргинских опоссумов освежевано"
+
+msgid "Oregano picked"
+msgstr "Душицы собрано"
+
+msgid "Owls plucked"
+msgstr "Сов ощипано"
+
+msgid "Oxen skinned"
+msgstr "Волов освежевано"
+
+msgid "Panthers killed"
+msgstr "Пантер убито"
+
+msgid "Parasol Mushrooms picked"
+msgstr "Грибов-зонтиков собрано"
+
+msgid "Pelicans plucked"
+msgstr "Пеликанов ощипано"
+
+msgid "Pheasants skinned"
+msgstr "Фазанов выпотрошено"
+
+msgid "Cats photographed"
+msgstr "Сфотографировано кошек"
+
+msgid "Dogs photographed"
+msgstr "Сфотографировано собак"
+
+msgid "Other players photographed"
+msgstr "Других игроков сфотографировано"
+
+msgid "Self portraits taken"
+msgstr "Вы сфотографировали себя"
+
+msgid "Photographed your horse"
+msgstr "Своя лошадь фотографирована"
+
+msgid "Pigs skinned"
+msgstr "Свиней освежевано"
+
+msgid "Player kills from cover in Free Roam Events"
+msgstr "Игроков убито из укрытия в событии свободного режима"
+
+msgid "Player kills from cover in Showdowns"
+msgstr "Игроков убито из укрытия в противоборствах"
+
+msgid "Player kills in Dead Eye in Free Roam Events"
+msgstr "Игроков убито в режиме «Меткий глаз» в событии свободного режима"
+
+msgid "Player kills in Dead Eye in Showdowns"
+msgstr "Игроков убито в режиме «Меткий глаз» в противоборствах"
+
+msgid "Players headshot with a Bow in Free Roam Events"
+msgstr "Игроков убито выстрелом в голову из лука в событии свободного режима"
+
+msgid "Players headshot with a Bow in Showdowns"
+msgstr "Игроков убито выстрелом в голову из лука противоборствах"
+
+msgid "Player headshot kills in Free Roam Events"
+msgstr "Игроков убито выстрелом в голову в событии свободного режима"
+
+msgid "Player headshot kills in Posse Versus"
+msgstr "Игроков убито выстрелом в голову в противостоянии отрядов"
+
+msgid "Player headshot kills in Showdowns"
+msgstr "Игроков убито выстрелом в голову в противоборствах"
+
+msgid "Player kills with a Bow in Free Roam Events"
+msgstr "Игроков убито из лука в событии свободного режима"
+
+msgid "Player kills with a Bow in Showdowns"
+msgstr "Игроков убито из лука в противоборствах"
+
+msgid "Player kills with explosives in Free Roam Events"
+msgstr "Игроков убито взрывчаткой в событии свободного режима"
+
+msgid "Player kills with explosives in Showdowns"
+msgstr "Игроков убито взрывчаткой в противоборствах"
+
+msgid "Player kills in Free Roam Events"
+msgstr "Игроков убито в событии свободного режима"
+
+msgid "Multiple Player kills in 5 sec. in Free Roam Events"
+msgstr "Вы убили больше одного игрока за 5 секунд в событии свободного режима"
+
+msgid "Player kills from the hip in Free Roam Events"
+msgstr "Игроков убито выстрелами от бедра в событии свободного режима"
+
+msgid "Player kills from the hip in Showdowns"
+msgstr "Игроков убито выстрелами от бедра в противоборствах"
+
+msgid "Player kills with melee in Free Roam Events"
+msgstr "Игроков убито оружием ближнего боя в событии свободного режима"
+
+msgid "Player kills with melee in Showdowns"
+msgstr "Игроков убито оружием ближнего боя в противоборствах"
+
+msgid "Player kills with a Pistol in Free Roam Events"
+msgstr "Игроков убито из пистолета в событии свободного режима"
+
+msgid "Player kills with a Pistol in Showdowns"
+msgstr "Игроков убито из пистолета в противоборствах"
+
+msgid "Player kills in Posse Versus"
+msgstr "Игроков убито в противостоянии отрядов"
+
+msgid "Multiple Player kills in 5 seconds in Posse Versus"
+msgstr "Вы убили больше одного игрока за 5 секунд в противостоянии отрядов"
+
+msgid "Player kills with a Repeater in Free Roam Events"
+msgstr "Игроков убито из карабина в событии свободного режима"
+
+msgid "Player kills with a Repeater in Showdowns"
+msgstr "Игроков убито из карабина в противоборствах"
+
+msgid "Player kills with a Revolver in Free Roam Events"
+msgstr "Игроков убито из револьвера в событии свободного режима"
+
+msgid "Player kills with a Revolver in Showdowns"
+msgstr "Игроков убито из револьвера в противоборствах"
+
+msgid "Player kills with a Rifle in Free Roam Events"
+msgstr "Игроков убито из винтовки в событии свободного режима"
+
+msgid "Player kills with a Rifle in Showdowns"
+msgstr "Игроков убито из винтовки в противоборствах"
+
+msgid "Player kills with a Shotgun in Free Roam Events"
+msgstr "Игроков убито из дробовика в событии свободного режима"
+
+msgid "Player kills with a Shotgun in Showdowns"
+msgstr "Игроков убито из дробовика в противоборствах"
+
+msgid "Player kills in Showdowns"
+msgstr "Игроков убито в противоборствах"
+
+msgid "Multiple Player kills in 5 seconds in Showdowns"
+msgstr "Вы убили больше одного игрока за 5 секунд в противоборстве"
+
+msgid "Player kills with thrown weapons in Free Roam Events"
+msgstr "Игроков убито метательным оружием в событии свободного режима"
+
+msgid "Player kills with throwing weapons in Showdowns"
+msgstr "Игроков убито метательным оружием в противоборствах"
+
+msgid "Players revived"
+msgstr "Игроков воскрешено"
+
+msgid "Bird Shooting Contest completed"
+msgstr "Пройдено состязание «Стрельба по птицам»"
+
+msgid "Biggest Fish Contest completed"
+msgstr "Пройдено состязание «Самая большая рыба»"
+
+msgid "Herb Picking Contest completed"
+msgstr "Пройдено состязание «Сбор трав»"
+
+msgid "Hunt the Leader completed"
+msgstr "«Охот на командира» завершено"
+
+msgid "Posse Infighting completed"
+msgstr "Распря в отряде завершена"
+
+msgid "Posses joined"
+msgstr "Приглашений в отряд принято"
+
+msgid "Posse Races completed"
+msgstr "Гонок отрядов завершено"
+
+msgid "Prairie Chickens skinned"
+msgstr "Луговых тетеревов выпотрошено"
+
+msgid "Prairie Poppies picked"
+msgstr "Пустынного мака собрано"
+
+msgid "Pronghorns skinned"
+msgstr "Вилорогов освежевано"
+
+msgid "Black-tailed Jackrabbits skinned"
+msgstr "Чернохвостых зайцев освежевано"
+
+msgid "North American Raccoons skinned"
+msgstr "Енотов-полоскунов освежевано"
+
+msgid "Placed top 3 in a Race"
+msgstr "Занято 1, 2 или 3 место в гонке"
+
+msgid "Ram's Head picked"
+msgstr "Грибов-баранов собрано"
+
+msgid "Rams skinned"
+msgstr "Баранов освежевано"
+
+msgid "Rats collected"
+msgstr "Крыс собрано"
+
+msgid "Western Ravens plucked"
+msgstr "Западных воронов ощипано"
+
+msgid "Raspberries picked"
+msgstr "Малины собрано"
+
+msgid "Red Sage picked"
+msgstr "Красного шалфея собрано"
+
+msgid "Roosters skinned"
+msgstr "Петухов выпотрошено"
+
+msgid "Seagulls plucked"
+msgstr "Чаек ощипано"
+
+msgid "Finish Showdown in any Showdown Series"
+msgstr "Завершено противоборство в любой серии"
+
+msgid "Finish Showdown in Elimination Series"
+msgstr "Завершено противоборство в серии на выбывание"
+
+msgid "Placed top 3 in an Elimination Showdown"
+msgstr "Занято 1, 2 или 3 место в противоборстве на выбывание"
+
+msgid "Finish a mode in Featured Series"
+msgstr "Завершено противоборство в избранной серии"
+
+msgid "Finish Race in Race Series"
+msgstr "Завершена гонка в серии гонок"
+
+msgid "Finish Showdown in Shootout Series"
+msgstr "Завершено противоборство в серии перестрелок"
+
+msgid "Placed top 3 in a Shootout Showdown"
+msgstr "Занято 1, 2 или 3 место в перестрелке"
+
+msgid "Finish Showdown in Takeover Series"
+msgstr "Завершено противоборство в серии захватов"
+
+msgid "Placed top 3 in a Takeover Showdown"
+msgstr "Занято 1, 2 или 3 место в захвате"
+
+msgid "Sheep skinned"
+msgstr "Овец освежевано"
+
+msgid "Animal claws sold"
+msgstr "Когтей животных продано"
+
+msgid "Animal meat sold"
+msgstr "Мяса животных продано"
+
+msgid "Animal teeth sold"
+msgstr "Зубов животных продано"
+
+msgid "Whole animal carcasses sold"
+msgstr "Целых туш животных продано"
+
+msgid "Feathers sold"
+msgstr "Перьев продано"
+
+msgid "Herbs sold"
+msgstr "Трав продано"
+
+msgid "Perfect pelts sold"
+msgstr "Превосходных шкур продано"
+
+msgid "Items sold to a Fence"
+msgstr "Предметов продано скупщику"
+
+msgid "Items sold to Gus"
+msgstr "Предметов продано Гасу"
+
+msgid "Visited a shop in Blackwater"
+msgstr "Вы посетили магазин в Блэкуотере"
+
+msgid "Visited a shop in Rhodes"
+msgstr "Вы посетили магазин в Роудсе"
+
+msgid "Visited a shop in Saint Denis"
+msgstr "Вы посетили магазин в Сен-Дени"
+
+msgid "Visited a shop in Strawberry"
+msgstr "Вы посетили магазин в Строберри"
+
+msgid "Visited a shop in Tumbleweed"
+msgstr "Вы посетили магазин в Тамблвиде"
+
+msgid "Visited a shop in Valentine"
+msgstr "Вы посетили магазин в Валентайне"
+
+msgid "Placed top 3 in a Showdown"
+msgstr "Занято 1, 2 или 3 место в противоборстве"
+
+msgid "Striped Skunks skinned"
+msgstr "Полосатых скунсов освежевано"
+
+msgid "Snakes skinned"
+msgstr "Змей освежевано"
+
+msgid "Small bird carcasses collected"
+msgstr "Тушек мелких птиц собрано"
+
+msgid "Spoonbills skinned"
+msgstr "Розовых колпиц выпотрошено"
+
+msgid "Squirrels collected"
+msgstr "Белок собрано"
+
+msgid "Story Missions completed"
+msgstr "Сюжетных заданий выполнено"
+
+msgid "Go On-Call and complete a Story mission"
+msgstr "Завершено случайное сюжетное задание"
+
+msgid "Western Toads collected"
+msgstr "Западноамериканских жаб собрано"
+
+msgid "Visited Annesburg and Armadillo in an hour"
+msgstr "Вы за час посетили Аннесберг и Армадилло"
+
+msgid "Visited Colter and Saint Denis in an hour"
+msgstr "Вы за час посетили Колтер и Сен-Дени"
+
+msgid "Visited Valentine and Van Horn in 30 mins"
+msgstr "Вы за 30 мин. посетили Валентайн и Ван-Хорн"
+
+msgid "Visited Bolger Glade"
+msgstr "Вы посетили Болджер-Глейд"
+
+msgid "Visited Brandywine Drop"
+msgstr "Вы посетили Брендивайнский водопад"
+
+msgid "Visited Colter"
+msgstr "Вы посетили Колтер"
+
+msgid "Visited Cotorra springs"
+msgstr "Вы посетили Которра-Спрингз"
+
+msgid "Visited Fort Mercer"
+msgstr "Вы посетили Форт-Мерсер"
+
+msgid "Visited Fort Wallace"
+msgstr "Вы посетили Форт-Уоллес"
+
+msgid "Visited Lagras"
+msgstr "Вы посетили Лаграс"
+
+msgid "Visited MacFarlane's Ranch"
+msgstr "Вы посетили ранчо Макфарлейнов"
+
+msgid "Visited the peak of Mount Hagen"
+msgstr "Вы посетили вершину горы Хаген"
+
+msgid "Visited Owanjila Dam"
+msgstr "Вы посетили Ованджильскую плотину"
+
+msgid "Visited Van Horn"
+msgstr "Вы посетили Ван-Хорн"
+
+msgid "Turkeys skinned"
+msgstr "Индеек выпотрошено"
+
+msgid "Turtles skinned"
+msgstr "Черепах освежевано"
+
+msgid "Vanilla Flowers picked"
+msgstr "Цветков ванили собрано"
+
+msgid "Violet Snowdrop picked"
+msgstr "Фиолетовых подснежников собрано"
+
+msgid "Vultures plucked"
+msgstr "Стервятников ощипано"
+
+msgid "Wild Carrots picked"
+msgstr "Дикой моркови собрано"
+
+msgid "Wild Feverfew picked"
+msgstr "Дикого пиретрума собрано"
+
+msgid "Wild Mint picked"
+msgstr "Мяты собрано"
+
+msgid "Wintergreen Berries picked"
+msgstr "Гаультерии собрано"
+
+msgid "Wolves killed"
+msgstr "Волков убито"
+
+msgid "Yarrow picked"
+msgstr "Тысячелистника собрано"
+
+msgid "Bounty targets brought in"
+msgstr "Преступников доставлено"
+
+msgid "More than one bounty target brought in at once"
+msgstr "Доставлено по нескольку разыскиваемых преступников за раз"
+
+msgid "Bounty hunt completed with 3 min or more left"
+msgstr "Вы завершили охоту за головами, имея в запасе 3 минуты или больше"
+
+msgid "Bounty hunt completed with 5 min or more left"
+msgstr "Вы завершили охоту за головами, имея в запасе 5 минут или больше"
+
+msgid "Bounty hunt completed with 4 min or more left"
+msgstr "Вы завершили охоту за головами, имея в запасе 4 минуты или больше"
+
+msgid "Bounties brought in from Lemoyne posters"
+msgstr "Поймано преступников с плакатов из Лемойна"
+
+msgid "Bounties brought in from New Austin posters"
+msgstr "Поймано преступников с плакатов из Нью-Остина"
+
+msgid "Bounties brought in from New Hanover posters"
+msgstr "Поймано преступников с плакатов из Нью-Ганновера"
+
+msgid "Bounties brought in from West Elizabeth posters"
+msgstr "Поймано преступников с плакатов из Вест-Элизабет"
+
+msgid "Easy ($) bounty mission completed"
+msgstr "Выполнено легких ($) заданий по поимке преступников"
+
+msgid "Hard ($$$) or Legendary Bounty mission completed"
+msgstr "Выполнено сложных ($$$) или легендарных заданий по поимке преступников"
+
+msgid "Medium ($$) bounty mission completed"
+msgstr "Выполнено средних ($$) заданий по поимке преступников"
+
+msgid "Player bounties collected"
+msgstr "Разыскиваемых игроков поймано"
+
+msgid "Bounty targets looted"
+msgstr "Разыскиваемых преступников ограблено"
+
+msgid "Bounty targets taken down with Bolas"
+msgstr "Разыскиваемых преступников обездвижено с помощью бол"
+
+msgid "Eagle Eye used to track a bounty target"
+msgstr "Использований «Орлиного глаза» для выслеживания преступников"
+
+msgid "Bounty targets lassoed from horseback"
+msgstr "Разыскиваемых преступников заарканено с лошади"
+
+msgid "Bounty targets hogtied with a Reinforced Lasso"
+msgstr "Разыскиваемых преступников связано с помощью улучшенного лассо"
+
+msgid "Bounty targets tagged with Tracking Arrow"
+msgstr "Разыскиваемых преступников помечено с помощью следящей стрелы"
+
+msgid "Antique Alcohol drunk"
+msgstr "Старинного алкоголя выпито"
+
+msgid "Antique Alcohol Bottles found"
+msgstr "Старинного алкоголя найдено"
+
+msgid "Arrowheads found"
+msgstr "Наконечников стрел найдено"
+
+msgid "Bird Eggs found"
+msgstr "Птичьих яиц найдено"
+
+msgid "Coins found"
+msgstr "Монет найдено"
+
+msgid "Family Heirlooms found"
+msgstr "Фамильных ценностей найдено"
+
+msgid "Fossils found"
+msgstr "Окаменелостей найдено"
+
+msgid "Collectibles collected"
+msgstr "Коллекционных предметов собрано"
+
+msgid "Collectibles looted from non-player enemies"
+msgstr "Добыто коллекционных предметов у ИИ-врагов"
+
+msgid "Collectibles sold to Madam Nazar"
+msgstr "Продано коллекционных предметов мадам Назар"
+
+msgid "Lost Jewelry found"
+msgstr "Потерянных украшений найдено"
+
+msgid "Tarot Cards found"
+msgstr "Карт Таро найдено"
+
+msgid "Collector Maps used"
+msgstr "Использовано карт коллекционера"
+
+msgid "Collectibles found with a Metal Detector"
+msgstr "Коллекционных предметов с помощью металлоискателя найдено"
+
+msgid "Collectibles found with a Shovel"
+msgstr "Откопано коллекционных предметов с помощью лопаты"
+
+msgid "American Wild Flowers found"
+msgstr "Американских диких цветов найдено"
+
+msgid "Played with a band for 2 mins"
+msgstr "Вы музицировали в течение 2 минут"
+
+msgid "Played with a band for 1 min"
+msgstr "Вы музицировали в течение 1 минуты"
+
+msgid "Moonshine Bar - Changed décor"
+msgstr "Интерьер в баре изменен"
+
+msgid "Crafted Toxic Moonshine"
+msgstr "Бутылок ядовитого самогона создано"
+
+msgid "Moonshine Bar - Danced for 2 mins"
+msgstr "Вы танцевали в баре в течение 2 минут"
+
+msgid "Moonshine Bar - Danced for 1 min"
+msgstr "Вы танцевали в баре в течение 1 минуты"
+
+msgid "Moonshine Bar - Drunken player interaction"
+msgstr "Взаимодействий с игроками в пьяном виде в баре"
+
+msgid "Moonshine Bar - Stayed for the last round"
+msgstr "Вы оставались в баре вплоть до закрытия"
+
+msgid "Moonshine Bootlegger Missions completed"
+msgstr "Заданий по бутлегерству выполнено"
+
+msgid "Money made from moonshine sold"
+msgstr "Доход от торговли самогоном"
+
+msgid "Drank own weak or higher strength moonshine"
+msgstr "Самогона любой крепости приготовлено и выпито"
+
+msgid "Drank own strong moonshine"
+msgstr "Самогона высокой крепости приготовлено и выпито"
+
+msgid "Drank own average or higher strength moonshine"
+msgstr "Самогона средней или высокой крепости приготовлено и выпито"
+
+msgid "Moonshine served to other players at a bar"
+msgstr "Раз подано самогона другим игрокам в баре"
+
+msgid "Moonshine of any type sold to a buyer"
+msgstr "Cамогона любого типа продано покупателю"
+
+msgid "Moonshine sold with at least 10 bottles intact"
+msgstr "Вы продали самогон, сохранив в целости не менее 10 бутылок"
+
+msgid "Moonshine sold with at least 18 bottles intact"
+msgstr "Вы продали самогон, сохранив в целости не менее 18 бутылок"
+
+msgid "Moonshine sold with at least 15 bottles intact"
+msgstr "Вы продали самогон, сохранив в целости не менее 15 бутылок"
+
+msgid "Moonshine of preferred type sold to a buyer"
+msgstr "Самогона предпочитаемого типа продано покупателю"
+
+msgid "Moonshine sold with 3 mins left"
+msgstr "Самогона продано с запасом в 3 минуты"
+
+msgid "Moonshine sold with 5 mins left"
+msgstr "Самогона продано с запасом в 5 минут"
+
+msgid "Moonshine sold with 4 mins left"
+msgstr "Самогона продано с запасом в 4 минуты"
+
+msgid "Completed regular or better moonshine recipe"
+msgstr "Любой рецепт для приготовления самогона использован"
+
+msgid "Completed special moonshine recipe"
+msgstr "Рецепт для приготовления особого самогона использован"
+
+msgid "Completed improved or better moonshine recipe"
+msgstr "Рецепт для приготовления улучшенного или особого самогона использован"
+
+msgid "Moonshine Story Mission completed"
+msgstr "Сюжетных заданий для роли самогонщика пройдено"
+
+msgid "Distance traveled on Moonshine Wagon"
+msgstr "Расстояние, преодоленное на повозке самогонщика во время задания (в футах)"
+
+msgid "Blending Tonics crafted or used"
+msgstr "Создано или использовано маскирующих тоников"
+
+msgid "Crafted or cooked at Wilderness Camp"
+msgstr "Создано предметов или приготовлено еды в походном лагере"
+
+msgid "Don't kill an animal for 12 game hours"
+msgstr "Не убивайте животных в течение 12 игровых часов"
+
+msgid "Don't kill an animal for 24 game hours"
+msgstr "Не убивайте животных в течение 24 игровых часов"
+
+msgid "Don't kill an animal for 18 game hours"
+msgstr "Не убивайте животных в течение 18 игровых часов"
+
+msgid "Legendary Animals photographed"
+msgstr "Сфотографировано легендарных животных"
+
+msgid "Animal samples sold to Harriet"
+msgstr "Образцов животных продано Гарриет"
+
+msgid "Animal samples taken within 10 mins"
+msgstr "Взято образцов животных за 10 минут"
+
+msgid "Desert animal samples taken"
+msgstr "Взято образцов обитателей пустынь"
+
+msgid "Farmland animal samples taken"
+msgstr "Взято образцов домашнего скота"
+
+msgid "Forest/River animal samples taken"
+msgstr "Взято образцов обитателей лесов и рек"
+
+msgid "Mountain/Grassland animal samples taken"
+msgstr "Взято образцов обитателей гор и лугов"
+
+msgid "Legendary Animal samples taken"
+msgstr "Взято образцов легендарных животных"
+
+msgid "Wetland animal samples taken"
+msgstr "Взято образцов обитателей болот"
+
+msgid "Sedated animals revived"
+msgstr "Оживлено усыпленных животных"
+
+msgid "Hardy Tonics used when too hot or cold"
+msgstr "Выпито тоников стойкости, когда вам было жарко или холодно"
+
+msgid "Legendary Animals found using pheromones"
+msgstr "Легендарных животных найдено с помощью феромонов"
+
+msgid "Weight Change Tonics used"
+msgstr "Тоников для изменения веса использовано"
+
+msgid "Goods sold to distant buyer"
+msgstr "Товаров продано удаленному покупателю"
+
+msgid "Goods sold to local buyer"
+msgstr "Товаров продано местному покупателю"
+
+msgid "Money made from trading"
+msgstr "Заработано денег с помощью торговли"
+
+msgid "Resupply missions completed"
+msgstr "Заданий по поставке выполнено"
+
+msgid "Resupply completed with 3 mins left"
+msgstr "Задание по поставке завершено с запасом в 3 минуты"
+
+msgid "Resupply completed with 5 mins left"
+msgstr "Задание по поставке завершено с запасом в 5 минут"
+
+msgid "Resupply completed with 4 mins left"
+msgstr "Задание по поставке завершено с запасом в 4 минуты"
+
+msgid "Carcasses donated within 10 minutes"
+msgstr "Туш отдано за 10 минут"
+
+msgid "Camp Stews eaten"
+msgstr "Рагу для лагеря съедено"
+
+msgid "Cripps Special Camp Stew recipes completed"
+msgstr "Фирменных рецептов рагу Криппса для лагеря завершено"
+
+msgid "High Quality Camp Stew recipes completed"
+msgstr "Рецептов рагу высокого качества для лагеря завершено"
+
+msgid "Superior Quality Camp Stew recipes completed"
+msgstr "Рецептов рагу выcшего качества для лагеря завершено"
+
+msgid "Donations to Cripps"
+msgstr "Материалов отдано Криппсу"
+
+msgid "Large animal carcasses donated to Cripps"
+msgstr "Туш крупных животных отдано Криппсу"
+
+msgid "Medium animal carcasses donated to Cripps"
+msgstr "Тушек средних животных отдано Криппсу"
+
+msgid "Small animal carcasses donated to Cripps"
+msgstr "Тушек мелких животных отдано Криппсу"
+
+msgid "Perfect carcasses donated to Cripps"
+msgstr "Превосходных туш отдано Криппсу"
+
+msgid "Donated deadly predator carcass or skin"
+msgstr "Туш или шкур опасных хищников отдано Криппсу"
+
+msgid "Distance Delivery Wagon traveled on mission"
+msgstr "Расстояние, преодоленное грузовой повозкой во время задания"
+
+msgid "Bonnie MacFarlane missions completed"
+msgstr "Заданий Бонни Макфарлейн выполнено"
+
+msgid "Sadie Adler missions completed"
+msgstr "Заданий Сэди Адлер выполнено"
+
+msgid "Train clerk missions completed"
+msgstr "Заданий железнодорожного клерка выполнено"
+
+msgid "Bounty completed without killing an enemy or bounty target"
+msgstr "Заданий по поимке преступников выполнено, не убив врага или преступника"
+
+msgid "Bounty completed with at least one other Posse Member"
+msgstr "Заданий по поимке преступников выполнено с членом отряда"
+
+msgid "Bounties completed within one real-world hour"
+msgstr "Заданий по поимке преступников выполнено за 1 час в реальном времени"
+
+msgid "Living bounty targets in a photograph"
+msgstr "Живых преступников сфотографировано"
