@@ -1,0 +1,20 @@
+[flake8]
+count = true
+doctests = true
+
+ignore =
+  # Missing docstring in public module
+  D100,
+  # Missing docstring in public function
+  D103,
+  # Missing docstring in public package
+  D104,
+  # Found wrong variable name
+  WPS110,
+  # Found walrus operator
+  WPS332
+
+max-line-length = 120
+max-line-complexity = 16
+max-local-variables = 10
+max-string-usages = 5
