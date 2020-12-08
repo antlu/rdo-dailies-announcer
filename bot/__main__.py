@@ -1,4 +1,5 @@
 import asyncio
+import logging
 from collections import namedtuple
 from contextlib import suppress
 
@@ -17,11 +18,11 @@ bot = commands.Bot(command_prefix=COMMAND_PREFIX)
 async def print_dailies():
     delay = seconds_for_next_update()
     if print_dailies.current_loop > 0:
-        print('Sleeping for {0} seconds'.format(delay))
+        logging.info('Sleeping for {0} seconds'.format(delay))
         await asyncio.sleep(delay)
     day = current_day()
     while (day_data := await get_data(day)) is None:
-        print('Waiting for new data')
+        logging.info('Waiting for new data')
         await asyncio.sleep(min(delay, 5 * 60))
     channels = (
         Channel(guild['channel_id'], guild['lang_code'])
@@ -36,7 +37,7 @@ async def print_dailies():
 async def prepare_to_run():
     bot.guilds_settings = data if (data := await io.read_file(GUILDS_SETTINGS_PATH)) is not None else {}
     await bot.wait_until_ready()
-    print('Bot started')
+    logging.info('Bot started')
 
 
 @bot.command()

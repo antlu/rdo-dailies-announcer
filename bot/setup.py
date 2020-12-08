@@ -1,8 +1,16 @@
 import gettext
+import logging
 from pathlib import Path
 from types import MappingProxyType
 
 from decouple import config
+
+logging.basicConfig(
+    filename='activity.log',
+    format='%(asctime)s:%(levelname)s:%(name)s:%(message)s',  # noqa: WPS323
+    level=logging.INFO,
+    encoding='utf-8',
+)
 
 GUILDS_SETTINGS_PATH = Path('settings.pickle')
 GUILDS_SETTINGS_PATH.touch()
