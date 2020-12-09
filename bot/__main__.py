@@ -5,7 +5,7 @@ from contextlib import suppress
 
 from discord.ext import commands, tasks
 
-from bot.setup import BOT_TOKEN, COMMAND_PREFIX, DB_PATH, GUILDS_SETTINGS_PATH, LOCALES
+from bot.setup import BOT_TOKEN, COMMAND_PREFIX, DB_PATH, GUILDS_SETTINGS_PATH, LOCALES  # noqa: I001
 from bot.utils import io
 from bot.utils.data import get_data, send
 from bot.utils.datetime import current_day, seconds_for_next_update
@@ -28,8 +28,11 @@ async def print_dailies():
         Channel(guild['channel_id'], guild['lang_code'])
         for guild in bot.guilds_settings.values()
     )
-    tasks_results = await asyncio.gather(*(send(bot, channel, day_data) for channel in channels))
-    day_data['sent_to_channels'].extend([result[0] for result in tasks_results if result[1]])
+    channels_ids = await asyncio.gather(*(
+        send(bot, channel, day_data) for channel in channels
+        if channel.id not in day_data['sent_to_channels']
+    ))
+    day_data['sent_to_channels'].extend(channel_id for channel_id in channels_ids)
     await io.update_file(DB_PATH, day_data)
 
 

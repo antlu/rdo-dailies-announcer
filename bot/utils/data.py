@@ -1,4 +1,3 @@
-from gettext import gettext as _
 from io import BytesIO
 
 import aiohttp
@@ -70,11 +69,9 @@ def render_data(data, lang):
 
 
 async def send(bot, channel, data):
-    if channel.id in data['sent_to_channels']:
-        return (channel.id, False)
     discord_channel = bot.get_channel(channel.id)
     await discord_channel.send(
         render_data(data, channel.lang),
         file=discord.File(BytesIO(data['nazar_img']), filename='nazar.png'),
     )
-    return (channel.id, True)
+    return channel.id
