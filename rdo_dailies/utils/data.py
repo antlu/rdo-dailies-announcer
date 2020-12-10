@@ -4,8 +4,8 @@ import aiohttp
 import discord
 from bs4 import BeautifulSoup
 
-from bot.setup import DB_PATH, SOURCE_URL, TRANSLATORS
-from bot.utils import io
+from rdo_dailies.setup import DB_PATH, SOURCE_URL, TRANSLATORS
+from rdo_dailies.utils import io
 
 
 def separate_number_from_text(strings_generator):

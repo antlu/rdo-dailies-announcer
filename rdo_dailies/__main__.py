@@ -5,10 +5,10 @@ from contextlib import suppress
 
 from discord.ext import commands, tasks
 
-from bot.setup import BOT_TOKEN, COMMAND_PREFIX, DB_PATH, GUILDS_SETTINGS_PATH, LOCALES  # noqa: I001
-from bot.utils import io
-from bot.utils.data import get_data, send
-from bot.utils.datetime import current_day, seconds_for_next_update
+from rdo_dailies.setup import BOT_TOKEN, COMMAND_PREFIX, DB_PATH, GUILDS_SETTINGS_PATH, LOCALES  # noqa: I001
+from rdo_dailies.utils import io
+from rdo_dailies.utils.data import get_data, send
+from rdo_dailies.utils.datetime import current_day, seconds_for_next_update
 
 Channel = namedtuple('Channel', ['id', 'lang'], defaults=['en'])
 bot = commands.Bot(command_prefix=COMMAND_PREFIX)
@@ -81,5 +81,10 @@ async def on_guild_remove(guild):
         del bot.guilds_settings[guild.id]  # noqa: WPS420
         await io.update_file(GUILDS_SETTINGS_PATH, bot.guilds_settings)
 
-print_dailies.start()
-bot.run(BOT_TOKEN)
+
+def start():
+    print_dailies.start()
+    bot.run(BOT_TOKEN)
+
+
+start()
