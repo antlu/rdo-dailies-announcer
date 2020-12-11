@@ -17,9 +17,6 @@ bot = commands.Bot(command_prefix=COMMAND_PREFIX)
 @tasks.loop()
 async def print_dailies():
     delay = seconds_for_next_update()
-    if print_dailies.current_loop > 0:
-        logging.info('Sleeping for {0} seconds'.format(delay))
-        await asyncio.sleep(delay)
     day = current_day()
     while (day_data := await get_data(day)) is None:
         logging.info('Waiting for new data')
@@ -34,6 +31,9 @@ async def print_dailies():
     ))
     day_data['sent_to_channels'].extend(channel_id for channel_id in channels_ids)
     await io.update_file(DB_PATH, day_data)
+
+    logging.info('Sleeping for {0} seconds'.format(delay))
+    await asyncio.sleep(delay)
 
 
 @print_dailies.before_loop
