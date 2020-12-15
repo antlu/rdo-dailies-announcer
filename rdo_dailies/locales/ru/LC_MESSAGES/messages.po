@@ -12,6 +12,44 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "January"
+msgstr "Январь"
+
+msgid "February"
+msgstr "Февраль"
+
+msgid "March"
+msgstr "Март"
+
+msgid "April"
+msgstr "Апрель"
+
+msgid "May"
+msgstr "Май"
+
+msgid "June"
+msgstr "Июнь"
+
+msgid "July"
+msgstr "Июль"
+
+msgid "August"
+msgstr "Август"
+
+msgid "September"
+msgstr "Сентябрь"
+
+msgid "October"
+msgstr "Октябрь"
+
+msgid "November"
+msgstr "Ноябрь"
+
+msgid "December"
+msgstr "Декабрь"
+
+# Titles
+
 msgid "Daily challenges"
 msgstr "Ежедневные испытания"
 
@@ -341,7 +379,7 @@ msgstr "Вапити освежевано"
 msgid "Used an emote on a local"
 msgstr "Жестов показано местному жителю"
 
-msgid "Used an emote on a player in Free Roam"
+msgid "Used an emote on a player"
 msgstr "Жестов показано игроку в свободном режиме"
 
 msgid "Non-player enemies grappled to the ground"
@@ -1148,7 +1186,7 @@ msgstr "Рецепт для приготовления улучшенного и
 msgid "Moonshine Story Mission completed"
 msgstr "Сюжетных заданий для роли самогонщика пройдено"
 
-msgid "Distance traveled on Moonshine Wagon"
+msgid "Distance Moonshine Wagon traveled on mission"
 msgstr "Расстояние, преодоленное на повозке самогонщика во время задания (в футах)"
 
 msgid "Blending Tonics crafted or used"

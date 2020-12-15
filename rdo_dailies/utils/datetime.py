@@ -2,7 +2,9 @@ from datetime import date, datetime, time, timedelta
 
 
 def current_day_from_iso(iso_date):
-    return date.fromisoformat(iso_date).strftime('%B %d')  # noqa: WPS323
+    month_day = date.fromisoformat(iso_date).strftime('%B %d')  # noqa: WPS323
+    month, day = month_day.split()
+    return '{0} {1}'.format(_(month), day)
 
 
 def seconds_for_next_update():
