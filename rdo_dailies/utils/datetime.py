@@ -1,8 +1,8 @@
-from datetime import datetime, time, timedelta
+from datetime import date, datetime, time, timedelta
 
 
-def current_day():
-    return datetime.utcnow().strftime('%B %d')  # noqa: WPS323
+def current_day_from_iso(iso_date):
+    return date.fromisoformat(iso_date).strftime('%B %d')  # noqa: WPS323
 
 
 def seconds_for_next_update():
