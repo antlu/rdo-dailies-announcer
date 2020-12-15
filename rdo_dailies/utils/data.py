@@ -1,77 +1,83 @@
+import datetime
 from io import BytesIO
+from types import MappingProxyType
 
 import aiohttp
 import discord
-from bs4 import BeautifulSoup
 
-from rdo_dailies.setup import DB_PATH, SOURCE_URL, TRANSLATORS
+from rdo_dailies.setup import DB_PATH, NAZAR_SOURCE_URL, SOURCE_URL, TRANSLATORS  # noqa: I001
 from rdo_dailies.utils import io
 
 
-def separate_number_from_text(strings_generator):
-    for string in strings_generator:
-        number = string
-        text = next(strings_generator)
-        split_text = text.split(maxsplit=1)
-        if split_text[0].isnumeric() or split_text[0].startswith('$'):
-            yield (split_text[0], split_text[1])
-        else:
-            yield (number, text)
+def separate_number_from_text(challenges):
+    for challenge in challenges:
+        number_with_text = challenge['description']['localizedFull'].split('/', maxsplit=1)
+        yield number_with_text[1].split(maxsplit=1)
 
 
-def parse_data(html):
-    soup = BeautifulSoup(html, 'html.parser')
-    parsed_day = str(soup.find('span', class_='daily-challenges-date-selection').string)
-    categories = ('general', 'bounty hunter', 'trader', 'collector', 'moonshiner', 'naturalist')
+CATEGORIES_MAPPING = MappingProxyType({
+    'CHARACTER_RANK': 'general',
+    'CHARACTER_RANK_BOUNTY_HUNTER': 'bounty hunter',
+    'CHARACTER_RANK_TRADER': 'trader',
+    'CHARACTER_RANK_COLLECTOR': 'collector',
+    'CHARACTER_RANK_MOONSHINER': 'moonshiner',
+    'CHARACTER_RANK_NATURALIST': 'naturalist',
+})
+
+
+def parse(dict_):
+    data = dict_.get('challengeSets') or dict_.get('data')
+    date = datetime.date.fromtimestamp(data[0]['startTime']).isoformat()
     dailies = {}
-    for category in categories:
-        cat_challenges = soup.find(id='{0}-challenges-container'.format(category.split()[0]))
-        strings = cat_challenges.stripped_strings
-        dailies[category] = [
+    for category in data:
+        cat_name = CATEGORIES_MAPPING[category['role']]
+        challenges = (challenge for challenge in category['challenges'])
+        dailies[cat_name] = [
             {'number': number, 'text': text}
-            for number, text in separate_number_from_text(strings)
+            for number, text in separate_number_from_text(challenges)
         ]
     return {
-        'day': parsed_day,
+        'date': date,
         'dailies': dailies,
-        'nazar_loc_img_url': soup.select_one('img[alt^="Madam"]')['src'],
         'sent_to_channels': [],
     }
 
 
-async def get_data(day):
-    if (data := await io.read_file(DB_PATH)) is not None and data['day'] == day:
+async def get_data(date):
+    if (data := await io.read_file(DB_PATH)) is not None and data['date'] == date:
         return data
     async with aiohttp.ClientSession(raise_for_status=True) as session:
-        async with session.get(SOURCE_URL) as response:
-            html = await response.text(encoding='UTF-8')
-            parsed_data = parse_data(html)
-            if parsed_data['day'] != day:
+        async with session.get(SOURCE_URL) as resp_dailies:
+            dailies_data = await resp_dailies.json(encoding='UTF-8')
+            parsed_data = parse(dailies_data)
+            if parsed_data['date'] != date:
                 return None
-        async with session.get(parsed_data['nazar_loc_img_url']) as response:  # noqa: WPS440
-            nazar_img = await response.read()  # noqa: WPS441
-    parsed_data.update({'nazar_img': nazar_img})
+        async with session.get(NAZAR_SOURCE_URL) as resp_nazar_data:
+            nazar_data = await resp_nazar_data.json(encoding='UTF-8')
+        async with session.get(nazar_data['image']) as resp_nazar_img:
+            parsed_data['nazar_img'] = await resp_nazar_img.read()
     return parsed_data
 
 
-def render_data(data, lang):
+def render(data, lang):
     TRANSLATORS[lang].install()
-    strings = ['{0}\n'.format(data['day'])]
+    strings = ['{0} — {1}\n'.format(_('Daily challenges'), data['date'])]
     for category, tasks in data['dailies'].items():
-        cat_title = '{0} challenges'.format(category.capitalize())
+        cat_title = '{0}'.format(category.capitalize())
         strings.append('__{0}__'.format(_(cat_title)))
         for task in tasks:
             strings.append('{0}: **{1}**'.format(
                 _(task['text']), task['number'],
             ))
         strings.append('')
+    strings.append('__{0}__'.format(_("Madam Nazar's Location")))
     return '\n'.join(strings)
 
 
 async def send(bot, channel, data):
     discord_channel = bot.get_channel(channel.id)
     await discord_channel.send(
-        render_data(data, channel.lang),
+        render(data, channel.lang),
         file=discord.File(BytesIO(data['nazar_img']), filename='nazar.png'),
     )
     return channel.id

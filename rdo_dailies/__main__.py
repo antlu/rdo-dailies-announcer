@@ -1,4 +1,5 @@
 import asyncio
+import datetime
 import logging
 from collections import namedtuple
 from contextlib import suppress
@@ -8,7 +9,7 @@ from discord.ext import commands, tasks
 from rdo_dailies.setup import BOT_TOKEN, COMMAND_PREFIX, DB_PATH, GUILDS_SETTINGS_PATH, LOCALES  # noqa: I001
 from rdo_dailies.utils import io
 from rdo_dailies.utils.data import get_data, send
-from rdo_dailies.utils.datetime import current_day, seconds_for_next_update
+from rdo_dailies.utils.datetime import seconds_for_next_update
 
 Channel = namedtuple('Channel', ['id', 'lang'], defaults=['en'])
 bot = commands.Bot(command_prefix=COMMAND_PREFIX)
@@ -17,8 +18,8 @@ bot = commands.Bot(command_prefix=COMMAND_PREFIX)
 @tasks.loop()
 async def print_dailies():
     delay = seconds_for_next_update()
-    day = current_day()
-    while (day_data := await get_data(day)) is None:
+    date = datetime.date.today().isoformat()
+    while (day_data := await get_data(date)) is None:
         logging.info('Waiting for new data')
         await asyncio.sleep(min(delay, 5 * 60))
     channels = (

@@ -11,6 +11,7 @@ HOME_DIR.mkdir(exist_ok=True)
 
 logging.basicConfig(
     filename=(HOME_DIR / 'activity.log'),
+    filemode='w',
     format='%(asctime)s:%(levelname)s:%(name)s:%(message)s',  # noqa: WPS323
     level=logging.INFO,
     encoding='utf-8',
@@ -31,7 +32,8 @@ for locale in LOCALES:
         'messages', LOCALEDIR_PATH, languages=[locale], fallback=True,
     )
 
-COMMAND_PREFIX = config('COMMAND_PREFIX', '^')
-BOT_TOKEN = config('BOT_TOKEN')
+COMMAND_PREFIX = config('RDO_DAILIES_COMMAND_PREFIX', '^')
+BOT_TOKEN = config('RDO_DAILIES_BOT_TOKEN')
 
-SOURCE_URL = 'https://rdodailies.com/'
+SOURCE_URL = config('RDO_DAILIES_SOURCE_URL')
+NAZAR_SOURCE_URL = config('RDO_DAILIES_NAZAR_SOURCE_URL')
