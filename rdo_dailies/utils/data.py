@@ -7,7 +7,7 @@ import discord
 
 from rdo_dailies.setup import DB_PATH, NAZAR_SOURCE_URL, SOURCE_URL, TRANSLATORS  # noqa: I001
 from rdo_dailies.utils import io
-from rdo_dailies.utils.datetime import current_day_from_iso
+from rdo_dailies.utils.datetime import day_from_iso, is_before_update_time
 
 
 def separate_number_from_text(challenges):
@@ -46,7 +46,8 @@ def parse(dict_):
 
 async def get_data(date):
     if (data := await io.read_file(DB_PATH)) is not None:
-        return data
+        if data['date'] == date or is_before_update_time():
+            return data
     async with aiohttp.ClientSession(raise_for_status=True) as session:
         async with session.get(SOURCE_URL) as resp_dailies:
             dailies_data = await resp_dailies.json(encoding='UTF-8')
@@ -62,7 +63,7 @@ async def get_data(date):
 
 def render(data, lang):
     TRANSLATORS[lang].install()
-    strings = ['{0} — {1}\n'.format(_('Daily challenges'), current_day_from_iso(data['date']))]
+    strings = ['{0} — {1}\n'.format(_('Daily challenges'), day_from_iso(data['date']))]
     ordered_dailies = {cat: data['dailies'][cat] for cat in CATEGORIES_MAPPING.values()}
     for category, tasks in ordered_dailies.items():
         cat_title = '{0}'.format(category.capitalize())
