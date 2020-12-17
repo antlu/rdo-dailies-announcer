@@ -49,15 +49,12 @@ async def get_data(date):
         if data['date'] == date or is_before_update_time():
             return data
     async with aiohttp.ClientSession(raise_for_status=True) as session:
-        async with session.get(SOURCE_URL) as resp_dailies:
-            dailies_data = await resp_dailies.json(encoding='UTF-8')
-            parsed_data = parse(dailies_data)
-            if parsed_data['date'] != date:
-                return None
-        async with session.get(NAZAR_SOURCE_URL) as resp_nazar_data:
-            nazar_data = await resp_nazar_data.json(encoding='UTF-8')
-        async with session.get(nazar_data['image']) as resp_nazar_img:
-            parsed_data['nazar_img'] = await resp_nazar_img.read()
+        dailies_data = await io.get_by_session(session, SOURCE_URL, 'json')
+        parsed_data = parse(dailies_data)
+        if parsed_data['date'] != date:
+            return None
+        nazar_data = await io.get_by_session(session, NAZAR_SOURCE_URL, 'json')
+        parsed_data['nazar_img'] = await io.get_by_session(session, nazar_data['image'], 'bytes')
     return parsed_data
 
 

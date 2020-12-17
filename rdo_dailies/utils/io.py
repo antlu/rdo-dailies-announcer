@@ -13,3 +13,12 @@ async def read_file(filepath):
 async def update_file(filepath, data):
     async with aiofiles.open(filepath, 'wb') as file:
         await file.write(pickle.dumps(data))
+
+
+async def get_by_session(session, url, response_fmt):
+    response = await session.get(url)
+    if response_fmt == 'json':
+        return await response.json(encoding='UTF-8')
+    elif response_fmt == 'bytes':
+        return await response.read()
+    raise ValueError('Unknown response format')
