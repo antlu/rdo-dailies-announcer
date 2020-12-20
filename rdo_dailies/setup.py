@@ -1,21 +1,17 @@
 import gettext
-import logging
+from logging import config as logging_config
 from pathlib import Path
 from types import MappingProxyType
 
+import yaml
 from decouple import config
 
 BASE_DIR = Path(__file__).parent
 HOME_DIR = Path.home() / '.rdo_dailies_announcer'
 HOME_DIR.mkdir(exist_ok=True)
 
-logging.basicConfig(
-    filename=(HOME_DIR / 'activity.log'),
-    filemode='w',
-    format='%(asctime)s:%(levelname)s:%(name)s:%(message)s',  # noqa: WPS323
-    level=logging.INFO,
-    encoding='utf-8',
-)
+with open(BASE_DIR / 'logging.yml', encoding='utf-8') as logging_config_file:
+    logging_config.dictConfig(yaml.safe_load(logging_config_file))
 
 GUILDS_SETTINGS_PATH = HOME_DIR / 'settings.pickle'
 GUILDS_SETTINGS_PATH.touch()

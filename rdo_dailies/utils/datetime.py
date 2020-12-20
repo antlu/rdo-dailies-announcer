@@ -1,12 +1,17 @@
-from datetime import date, datetime, time, timedelta
+import time
+from datetime import date, datetime, time as dt_time, timedelta
 
-UPDATE_TIME = time(6, second=30)  # noqa: WPS432
+UPDATE_TIME = dt_time(6, second=30)  # noqa: WPS432
 
 
 def day_from_iso(iso_date):
     month_day = date.fromisoformat(iso_date).strftime('%B %d')  # noqa: WPS323
     month, day = month_day.split()
     return '{0} {1}'.format(_(month), day)
+
+
+def hm_from_seconds(secs):
+    return time.strftime('%Hh %Mm', time.gmtime(secs))
 
 
 def is_before_update_time():  # noqa: N802,WPS114

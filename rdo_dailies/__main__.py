@@ -9,10 +9,11 @@ from discord.ext import commands, tasks
 from rdo_dailies.setup import BOT_TOKEN, COMMAND_PREFIX, DB_PATH, GUILDS_SETTINGS_PATH, LOCALES  # noqa: I001
 from rdo_dailies.utils import io
 from rdo_dailies.utils.data import get_data, send
-from rdo_dailies.utils.datetime import seconds_for_next_update
+from rdo_dailies.utils.datetime import hm_from_seconds, seconds_for_next_update
 
 Channel = namedtuple('Channel', ['id', 'lang'], defaults=['en'])
 bot = commands.Bot(command_prefix=COMMAND_PREFIX)
+logger = logging.getLogger('bot')
 
 
 @tasks.loop()
@@ -20,7 +21,7 @@ async def print_dailies():
     delay = seconds_for_next_update()
     date = datetime.date.today().isoformat()
     while (day_data := await get_data(date)) is None:
-        logging.info('Waiting for new data')
+        logger.info('Waiting for new data')
         await asyncio.sleep(min(delay, 5 * 60))
     channels = (
         Channel(guild['channel_id'], guild['lang_code'])
@@ -33,7 +34,7 @@ async def print_dailies():
     day_data['sent_to_channels'].extend(channel_id for channel_id in channels_ids)
     await io.update_file(DB_PATH, day_data)
 
-    logging.info('Sleeping for {0} seconds'.format(delay))
+    logger.info('Next update in {0}'.format(hm_from_seconds(delay)))
     await asyncio.sleep(delay)
 
 
@@ -41,7 +42,7 @@ async def print_dailies():
 async def prepare_to_run():
     bot.guilds_settings = data if (data := await io.read_file(GUILDS_SETTINGS_PATH)) is not None else {}
     await bot.wait_until_ready()
-    logging.info('Bot started')
+    logger.info('Started')
 
 
 @bot.command()
