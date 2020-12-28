@@ -5,7 +5,7 @@ from types import MappingProxyType
 import aiohttp
 import discord
 
-from rdo_dailies.setup import DB_PATH, NAZAR_SOURCE_URL, SOURCE_URL, TRANSLATORS  # noqa: I001
+from rdo_dailies.setup import DB_PATH, LOCATION_TO_URL_MAPPINGS, NAZAR_SOURCE_URL, SOURCE_URL, TRANSLATORS  # noqa: I001
 from rdo_dailies.utils import io
 from rdo_dailies.utils.datetime import day_from_iso, is_before_update_time
 
@@ -54,7 +54,8 @@ async def get_data(date):
         if parsed_data['date'] != date:
             return None
         nazar_data = await io.get_by_session(session, NAZAR_SOURCE_URL, 'json')
-        parsed_data['nazar_img'] = await io.get_by_session(session, nazar_data['image'], 'bytes')
+        location_id = nazar_data.get('nazar') or nazar_data['location']['id']
+        parsed_data['nazar_img'] = await io.get_by_session(session, LOCATION_TO_URL_MAPPINGS[location_id], 'bytes')
     return parsed_data
 
 

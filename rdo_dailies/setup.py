@@ -1,4 +1,5 @@
 import gettext
+import json
 from logging import config as logging_config
 from pathlib import Path
 from types import MappingProxyType
@@ -12,6 +13,9 @@ HOME_DIR.mkdir(exist_ok=True)
 
 with open(BASE_DIR / 'logging.yml', encoding='utf-8') as logging_config_file:
     logging_config.dictConfig(yaml.safe_load(logging_config_file))
+
+with open(BASE_DIR / 'nazar_locations.json', encoding='utf-8') as locations_file:
+    LOCATION_TO_URL_MAPPINGS = json.load(locations_file)
 
 GUILDS_SETTINGS_PATH = HOME_DIR / 'settings.pickle'
 GUILDS_SETTINGS_PATH.touch()
