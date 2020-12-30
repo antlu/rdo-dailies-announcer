@@ -15,6 +15,12 @@ ignore =
   # Found walrus operator
   WPS332
 
+per-file-ignores =
+  */settings/__init__.py:
+    # Found __init__.py module with logic
+    WPS412
+
+max-import-from-members = 10
 max-line-length = 120
 max-line-complexity = 16
 max-local-variables = 10
