@@ -6,7 +6,7 @@ from contextlib import suppress
 
 from discord.ext import commands, tasks
 
-from rdo_dailies.setup import BOT_TOKEN, COMMAND_PREFIX, DB_PATH, GUILDS_SETTINGS_PATH, LOCALES  # noqa: I001
+from rdo_dailies.settings import BOT_TOKEN, COMMAND_PREFIX, DB_PATH, GUILDS_SETTINGS_PATH, LOCALES
 from rdo_dailies.utils import io
 from rdo_dailies.utils.data import get_data, send
 from rdo_dailies.utils.datetime import hm_from_seconds, seconds_for_next_update

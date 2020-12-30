@@ -7,14 +7,14 @@ from types import MappingProxyType
 import yaml
 from decouple import config
 
-BASE_DIR = Path(__file__).parent
+BASE_DIR = Path(__file__).parent.parent
 HOME_DIR = Path.home() / '.rdo_dailies_announcer'
 HOME_DIR.mkdir(exist_ok=True)
 
-with open(BASE_DIR / 'logging.yml', encoding='utf-8') as logging_config_file:
+with open(BASE_DIR / 'settings/logging.yml', encoding='utf-8') as logging_config_file:
     logging_config.dictConfig(yaml.safe_load(logging_config_file))
 
-with open(BASE_DIR / 'nazar_locations.json', encoding='utf-8') as locations_file:
+with open(BASE_DIR / 'settings/nazar_locations.json', encoding='utf-8') as locations_file:
     LOCATION_TO_URL_MAPPINGS = json.load(locations_file)
 
 GUILDS_SETTINGS_PATH = HOME_DIR / 'settings.pickle'

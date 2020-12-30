@@ -5,7 +5,7 @@ from types import MappingProxyType
 import aiohttp
 import discord
 
-from rdo_dailies.setup import DB_PATH, LOCATION_TO_URL_MAPPINGS, NAZAR_SOURCE_URL, SOURCE_URL, TRANSLATORS  # noqa: I001
+from rdo_dailies.settings import DB_PATH, LOCATION_TO_URL_MAPPINGS, NAZAR_SOURCE_URL, SOURCE_URL, TRANSLATORS
 from rdo_dailies.utils import io
 from rdo_dailies.utils.datetime import day_from_iso, is_before_update_time
 
