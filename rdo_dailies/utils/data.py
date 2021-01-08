@@ -12,8 +12,12 @@ from rdo_dailies.utils.datetime import day_from_iso, is_before_update_time
 
 def separate_number_from_text(challenges):
     for challenge in challenges:
-        number_with_text = challenge['description']['localizedFull'].split('/', maxsplit=1)
-        yield number_with_text[1].split(maxsplit=1)
+        full_description = challenge['description']['localizedFull']
+        if full_description[0].isdigit():
+            number_with_text = full_description.split('/', maxsplit=1)
+            yield number_with_text[1].split(maxsplit=1)
+        else:
+            yield ['1', full_description]
 
 
 CATEGORIES_MAPPING = MappingProxyType({

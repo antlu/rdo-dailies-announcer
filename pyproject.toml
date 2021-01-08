@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "rdo_dailies"
-version = "0.5.0"
+version = "0.5.1"
 description = "A discord bot that posts daily challenges"
 authors = ["Anton <gmt@freemail.ru>"]
 packages = [
